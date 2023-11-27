@@ -1,6 +1,8 @@
 "use client"
-import Image from 'next/image'
-import Link from 'next/link'
+
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -11,21 +13,21 @@ export default function Home() {
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
-            Bring your ideas to life with the power of the 
+            Bring your ideas to life with the power of the
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
               Web 
             </span>
           </h1>
           <p className="text-gray-200 hidden md:block">
-            I'm a Charlotte, NC based Web Developer, I specialize in backend technologies and creating solutions that integrate with front-end iterations.
+          I'm a Charlotte, NC based Web Developer with a Bachelors' in Digital Information Desgin. My specializations include backend technologies and creating solutions that integrate with front-end iterations.
           </p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link
               href="/my-skills"
-              className="rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-blue-500 hover:bg-purple-400 px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              Learn more
+              My skillset
             </Link>
             <Link
               href="/my-projects"
@@ -68,13 +70,19 @@ export default function Home() {
       </div>
 
       <div className="absolute bottom-0 right-0 z-[10]">
-        <Image
-          src="/horse.png"
-          alt="horse"
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          >
+          <Image
+          src="/wdb-logo-purp.svg"
+          alt="logo"
           height={300}
           width={300}
           className="absolute right-55 top-40"
-        />
+          />
+        </motion.div>
 
         <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
       </div>
@@ -99,4 +107,3 @@ export default function Home() {
     </main>
   );
 }
-

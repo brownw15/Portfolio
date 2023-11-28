@@ -9,10 +9,10 @@ const Navbar = () => {
             <div className='flex flex-row gap-3 items-center'>
                 <div className='relative'>
                     <Image
-                    src="/wdb-high-resolution-logo-transparent.png"
+                    src="/wdb-high-resolution-logo-white-transparent.png"
                     alt="logo"
-                    width={40}
-                    height={40}
+                    width={70}
+                    height={70}
                     className='w-full h-full object-contain rounded full'
                     />
                 </div>
@@ -21,13 +21,15 @@ const Navbar = () => {
 
             <div className='flex flex-row gap-5 mb-2'>
                 {Socials.map((social) => (
-                    <Image 
-                        key={social.name}
-                        src={social.src}
-                        alt={social.alt}
-                        width={28}
-                        height={28}
-                    />
+                    <a href="https://github.com/brownw15" className='rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px]' target="_blank">
+                        <Image 
+                            key={social.name}
+                            src={social.src}
+                            alt={social.alt}
+                            width={60}
+                            height={60}
+                            />
+                    </a>
                 ))}  
             </div>
         </div>

@@ -32,13 +32,6 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Redux",
-    Image: "/redux.png",
-    width: 80,
-    height: 80,
-  },
-
-  {
     name: "TypeScript",
     Image: "/ts.png",
     width: 80,
@@ -46,25 +39,31 @@ export const SkillData = [
   },
   {
     name: "Next js 14",
-    Image: "/nextf.png",
+    Image: "/nextjs.png",
     width: 80,
     height: 80,
   },
   {
-    name: "Framer Motion",
-    Image: "/framer.png",
+    name: "Docker",
+    Image: "/docker.webp",
     width: 80,
     height: 80,
   },
   {
-    name: "Stripe Payment",
-    Image: "/stripe.webp",
+    name: "SQL",
+    Image: "/mysql.png",
     width: 80, 
     height: 80,
   },
   {
     name: "Node js",
     Image: "/node-js.png",
+    width: 80,
+    height: 80,
+  },
+  {
+    name: "Flutter",
+    Image: "/flutter.png",
     width: 80,
     height: 80,
   },
@@ -78,27 +77,31 @@ export const SkillData = [
 
 export const Socials = [
   {
+    id: 1,
     name: "Github",
-    src: "/github-mark.png",
+    src: "/github-white.png",
   },
 ];
 export const Projects = [
   {
+    id: 1,
     title: "Ticketing System Web App",
-    text: "This application was built with the intent of keeping data ",
+    text: "This application was built with the intent of keeping data. ",
     src: "/NextWebsite.png",
   },
-  {
+  { id: 2,
     title: "Task Scheduling Web App",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     src: "/SpaceWebsite.png",
   },
   {
+    id: 3,
     title: "Modern Nextjs Portfolio",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     src: "/WebPortfolio.png",
   },
   {
+    id: 4,
     title: "Matrix themed Website",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
     src: "/Matrix.png",

@@ -25,22 +25,22 @@ export default function Home() {
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link
               href="/my-skills"
-              className="rounded-[20px] group relative bg-blue-500 hover:bg-purple-400 px-5 py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-clip-border p-6 bg-violet-600 border-4 border-violet-300 border-dashed px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              My skillset
+              Skillset
             </Link>
             <Link
               href="/my-projects"
-              className="rounded-[20px] group relative bg-trasparent px-5 border border-white py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-trasparent hover:bg-slate-500 px-5 border border-white py-3 text-lg text-white max-w-[200px]"
             >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
-              My projects
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
+              Projects
             </Link>
             <Link
               href="/contact-me"
               className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
+              <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Contact me
             </Link>
           </div>
@@ -50,16 +50,16 @@ export default function Home() {
       <div className="absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
         <Link
           href="/my-skills"
-          className="rounded-[20px] group bg-blue-500 px-5 py-3 text-lg text-white max-w-[200px]"
+          className="rounded-[20px] group bg-purple-200 px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          Learn more
+          Skillset
         </Link>
 
         <Link
           href="/my-projects"
           className="rounded-[20px] group bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
         >
-          My projects
+          Projects
         </Link>
         <Link
           href="/contact-me"
@@ -105,5 +105,5 @@ export default function Home() {
         className="absolute top-0 left-0 z-[10]"
       />
     </main>
-  );
+  )
 }

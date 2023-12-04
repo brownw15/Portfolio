@@ -14,7 +14,7 @@ export default function Home() {
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
             Bring your ideas to life with the power of the
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500 text-center justify-center">
               {" "}
               Web 
             </span>
@@ -25,20 +25,21 @@ export default function Home() {
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link
               href="/my-skills"
-              className="rounded-[20px] group relative bg-clip-border p-6 bg-violet-600 border-4 border-violet-300 border-dashed px-5 py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-trasparent hover:bg-red-900 px-5 border border-white py-3 text-lg text-white max-w-[200px]"
             >
+            <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Skillset
             </Link>
             <Link
               href="/my-projects"
-              className="rounded-[20px] group relative bg-trasparent hover:bg-slate-500 px-5 border border-white py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-trasparent hover:bg-red-900 px-5 border border-white py-3 text-lg text-white max-w-[200px]"
             >
               <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Projects
             </Link>
             <Link
               href="/contact-me"
-              className="rounded-[20px] group relative bg-trasparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
+              className="rounded-[20px] group relative bg-trasparent hover:bg-red-900 border border-white px-5 py-3 text-lg text-white max-w-[200px]"
             >
               <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
               Contact me
@@ -76,10 +77,10 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           >
           <Image
-          src="/wdb-logo-purp.svg"
+          src="/wdb-high-resolution-logo-white-transparent.png"
           alt="logo"
-          height={300}
-          width={300}
+          height={270}
+          width={270}
           className="absolute right-55 top-40"
           />
         </motion.div>
